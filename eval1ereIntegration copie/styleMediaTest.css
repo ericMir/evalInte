@@ -1,0 +1,52 @@
+@import url(styleTest.css);
+@media(max-width:870px ){
+
+    header a#mobile{
+        display: block;
+        justify-self: start;
+    }
+    header nav ul li:first-child{
+        display: none;
+    }
+    header nav{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    }
+
+    header nav ul{
+        overflow: hidden;
+        list-style: none;
+        margin-top: 0;
+        grid-column: span 2;
+        justify-self: stretch
+    }
+    header label {
+        display: block;
+        justify-self: end;
+    }
+    /* header nav input{display:none;} */
+    header nav input label div{
+        z-index:100;
+    }
+    header nav label div,header nav input~li{position: relative;}
+    header nav input+label div{
+        width: 5rem;
+        overflow:hidden;
+    }
+    header nav ul li{
+        transform: translateY(-12rem);
+        transition: all .5s; 
+        text-align: right;
+    }
+    header nav ul li a{
+        font-size: 1.6rem;
+        font-family: Roboto;
+        font-weight: 700;
+        text-decoration: none;
+        color: darkblue;
+    }
+
+
+}    
