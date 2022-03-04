@@ -1,6 +1,14 @@
 @import url(styleTest.css);
 @media(max-width:870px ){
 
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+   flex-direction: column; 
+}
 
+.bandeau img{
+    visibility: visible;
+}
 
 }    
